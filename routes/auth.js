@@ -4,9 +4,6 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const router = express.Router();
 
-const authRoutes = require('./routes/auth');
-app.use('/auth', authRoutes);
-
 // Login route
 router.post('/login', async (req, res) => {
   try {
