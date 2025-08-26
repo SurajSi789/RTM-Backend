@@ -13,7 +13,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: 'https://telephony-test-abe86.web.app/', // Your frontend URL
+    origin: ['http://localhost:5173', 'https://your-frontend-domain.web.app'], // Your frontend URL
     credentials: true
 }));
 app.use(express.json());
